@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% block title %}Sign-Up{% endblock %}
+
+{% block content %}
+    <div class="sign-up-container mt-4 mb-4 d-flex flex-column align-items-center">
+        <h1 align="center">
+            Sign-Up
+        </h1>
+        <br>
+        <medium>
+            If you don't have an account, please use the form below to sign-up for a new account.
+        </medium>
+        <br>
+        <form method="POST" class="sign-up-form p-4 pt-5 pb-5 d-flex flex-column align-items-center w-50">
+            <br>
+            <div class="form-group w-100">
+                <label for="email">
+                    <b>Email Address</b>
+                </label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Enter valid email address">
+            </div>
+            <br>
+            <div class="form-group w-100">
+                <label for="firstName">
+                    <b>First Name</b>
+                </label>
+                <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Enter first name">
+            </div>
+            <br>
+            <div class="form-group w-100">
+                <label for="password">
+                    <b>Password</b>
+                </label>
+                <input type="password" class="form-control" id="password" name="password" placeholder="Enter a password">
+            </div>
+            <br>
+            <div class="form-group w-100">
+                <label for="password">
+                    <b>Confirm Password</b>
+                </label>
+                <input type="password" class="form-control" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password">
+            </div>
+            <br>
+            <button type="submit" class="btn btn-dark w-50 pt-2 pb-2 ps-4 pe-4">
+                Submit
+            </button>
+        </form>
+    </div>
+{% endblock %}

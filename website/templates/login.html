@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block title %}Login{% endblock %}
+
+{% block content %}
+    <div class="login-container mt-4 mb-4 d-flex flex-column align-items-center">
+        <h1 align="center">
+            Login
+        </h1>
+        <br>
+        <medium>
+            Already have an account? Please use the form below to login to your account!
+        </medium>
+        <br>
+        <form class="login-form p-4 pt-5 pb-5 d-flex flex-column align-items-center w-50" method="POST">
+            <div class="form-group w-100">
+                <label for="email">
+                    <b>Email Address</b>
+                </label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email address...">
+            </div>
+            <br>
+            <div class="form-group w-100">
+                <label for="password">
+                    <b>Password</b>
+                </label>
+                <input type="password" class="form-control" id="password" name="password" placeholder="Enter your password...">
+            </div>
+            <br>
+            <button type="submit" class="btn btn-dark w-50 pt-2 pb-2 ps-4 pe-4">
+                Login
+            </button>
+        </form>
+    </div>
+    <!--
+    {% if boolean == True %}
+        Yes it is true.
+    {% elif boolean == False %}
+        No it is not true.
+    {% else %}
+        Error
+    {% endif %}
+    -->
+{% endblock %}
